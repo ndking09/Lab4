@@ -346,7 +346,7 @@ public class Sudoku extends LatinSquare {
         for (int num: c.getlstValidValues()) {
             if(isValidValue(c, num)) {
                this.getPuzzle()[c.getiRow()][c.getiCol()] = num;
-               if (fillRemaining(c.GetNextCell(c.GetNextCell(c)))){
+               if (fillRemaining(c.GetNextCell(c))){
                	  return true;
               }
               this.getPuzzle()[c.getiRow()][c.getiCol()] = 0;
